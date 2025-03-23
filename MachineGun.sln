@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35913.81 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MachineGun", "MachineGun\MachineGun.csproj", "{1D14B9A5-6DA2-4BAF-9E6E-541DD471148B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D14B9A5-6DA2-4BAF-9E6E-541DD471148B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D14B9A5-6DA2-4BAF-9E6E-541DD471148B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D14B9A5-6DA2-4BAF-9E6E-541DD471148B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D14B9A5-6DA2-4BAF-9E6E-541DD471148B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D0FA472-DF4B-4069-992E-D8F21B420A4C}
+	EndGlobalSection
+EndGlobal
