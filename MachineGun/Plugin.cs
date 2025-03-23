@@ -13,7 +13,7 @@ namespace MachineGun
         // Mod metadata
         private const string modGUID = "jacobot5.MachineGun";
         private const string modName = "MachineGun";
-        private const string modVersion = "0.1.0";
+        private const string modVersion = "0.2.0";
 
         // Initalize Harmony
         private readonly Harmony harmony = new Harmony(modGUID);
@@ -26,6 +26,7 @@ namespace MachineGun
 
         // Configuration
         public static ConfigEntry<float> configShotsPerSecond;
+        public static ConfigEntry<float> configKnockbackForce;
 
         // Initialize logging
         public static ManualLogSource mls;
@@ -49,6 +50,11 @@ namespace MachineGun
                                                 "ShotsPerSecond",
                                                 4f,
                                                 "How many times to shoot the Shotgun per second. Default is 4.");
+
+            configKnockbackForce = Config.Bind("General.Toggles",
+                                                "KnockbackForce",
+                                                4f,
+                                                "How much knockback force to apply. Default is 4.");
 
             // Do the patching
             harmony.PatchAll(typeof(MachineGunMod));

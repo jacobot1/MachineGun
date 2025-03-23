@@ -19,7 +19,7 @@
 			<Private>False</Private>
 		</Reference>
 		<Reference Include="LethalCompanyInputUtils">
-		  <HintPath>..\..\..\..\AppData\Roaming\r2modmanPlus-local\LethalCompany\profiles\MachineGun\BepInEx\plugins\Rune580-LethalCompany_InputUtils\LethalCompanyInputUtils\LethalCompanyInputUtils.dll</HintPath>
+		  <HintPath>D:\GameTools\Lethal Company\Mods\Rune580-LethalCompany_InputUtils-0.7.10\plugins\LethalCompanyInputUtils\LethalCompanyInputUtils.dll</HintPath>
 		  <Private>False</Private>
 		</Reference>
 		<Reference Include="Unity.InputSystem">
