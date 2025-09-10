@@ -13,7 +13,7 @@ namespace MachineGun
         // Mod metadata
         public const string modGUID = "com.jacobot5.MachineGun";
         public const string modName = "MachineGun";
-        public const string modVersion = "1.0.0";
+        public const string modVersion = "1.0.2";
 
         // Initalize Harmony
         private readonly Harmony harmony = new Harmony(modGUID);
