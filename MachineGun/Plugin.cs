@@ -11,9 +11,9 @@ namespace MachineGun
     public class MachineGunMod : BaseUnityPlugin
     {
         // Mod metadata
-        private const string modGUID = "jacobot5.MachineGun";
-        private const string modName = "MachineGun";
-        private const string modVersion = "0.2.0";
+        public const string modGUID = "com.jacobot5.MachineGun";
+        public const string modName = "MachineGun";
+        public const string modVersion = "1.0.0";
 
         // Initalize Harmony
         private readonly Harmony harmony = new Harmony(modGUID);
@@ -51,14 +51,10 @@ namespace MachineGun
                                                 4f,
                                                 "How many times to shoot the Shotgun per second. Default is 4.");
 
-            configKnockbackForce = Config.Bind("General.Toggles",
-                                                "KnockbackForce",
-                                                4f,
-                                                "How much knockback force to apply. Default is 4.");
-
             // Do the patching
             harmony.PatchAll(typeof(MachineGunMod));
             harmony.PatchAll(typeof(ShotgunItemPatch));
+            harmony.PatchAll(typeof(KickIfModNotInstalled));
         }
     }
 }

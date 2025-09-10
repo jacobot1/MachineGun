@@ -27,11 +27,6 @@ namespace MachineGun.Patches
                 if (shotClock <= 0f)
                 {
                     __instance.ItemActivate(used: false);
-                    // Knock back player
-                    if (!__instance.safetyOn)
-                    {
-                        __instance.playerHeldBy.externalForces += (__instance.transform.forward * -MachineGunMod.configKnockbackForce.Value);
-                    }
                     shotClock = 1 / MachineGunMod.configShotsPerSecond.Value;
                 }
                 shotClock -= Time.deltaTime;
